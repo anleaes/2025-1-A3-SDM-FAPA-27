@@ -1,18 +1,10 @@
 from rest_framework import viewsets
-from .models import (
-    Usuario, Empresa, Vaga,
-    Candidato, Candidatura,
-    Entrevista, Mensagem, Feedback
-)
-from .serializer import (
-    UsuarioSerializer, EmpresaSerializer, VagaSerializer,
-    CandidatoSerializer, CandidaturaSerializer,
-    EntrevistaSerializer, MensagemSerializer, FeedbackSerializer
-)
+from .models import *
+from .serializer import *
 
-class UsuarioViewSet(viewsets.ModelViewSet):
-    queryset = Usuario.objects.all()
-    serializer_class = UsuarioSerializer
+class RecrutadorViewSet(viewsets.ModelViewSet):
+    queryset = Recrutador.objects.all()
+    serializer_class = RecrutadorSerializer
 
 class EmpresaViewSet(viewsets.ModelViewSet):
     queryset = Empresa.objects.all()

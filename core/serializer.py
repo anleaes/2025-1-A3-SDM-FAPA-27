@@ -1,13 +1,13 @@
 from rest_framework import serializers
 from .models import (
-    Usuario, Empresa, Vaga,
+    Recrutador, Empresa, Vaga,
     Candidato, Candidatura,
     Entrevista, Mensagem, Feedback
 )
 
-class UsuarioSerializer(serializers.ModelSerializer):
+class RecrutadorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Usuario
+        model = Recrutador
         fields = '__all__'
 
 class EmpresaSerializer(serializers.ModelSerializer):

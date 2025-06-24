@@ -21,7 +21,7 @@ from rest_framework.routers import DefaultRouter
 from core import views
 
 router = DefaultRouter()
-router.register(r'usuarios', views.UsuarioViewSet)
+router.register(r'recrutadores', views.RecrutadorViewSet)
 router.register(r'empresas', views.EmpresaViewSet)
 router.register(r'vagas', views.VagaViewSet)
 router.register(r'candidatos', views.CandidatoViewSet)
